@@ -35,7 +35,11 @@ public class login extends AppCompatActivity {
     EditText editText;
     EditText editText1;
     ProgressBar progressBar;
+<<<<<<< HEAD
     static int i=0;
+=======
+    int i=0;
+>>>>>>> 6f4c351d9c6336cc2fe812646866e376e691d4e9
 
 
     @Override
@@ -63,7 +67,11 @@ public class login extends AppCompatActivity {
 
             try {
 
+<<<<<<< HEAD
                 URL url = new URL("https://10c9a69f.ngrok.io/env/"); // here is your URL path
+=======
+                URL url = new URL("https://26096a2e.ngrok.io/env/"); // here is your URL path
+>>>>>>> 6f4c351d9c6336cc2fe812646866e376e691d4e9
 
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("user_id", arg0[0]);
@@ -102,7 +110,11 @@ public class login extends AppCompatActivity {
 
                     while((line = in.readLine()) != null) {
 
+<<<<<<< HEAD
                         //publishProgress(i++);
+=======
+                        publishProgress(i++);
+>>>>>>> 6f4c351d9c6336cc2fe812646866e376e691d4e9
 
                         sb.append(line);
                         break;
@@ -122,6 +134,7 @@ public class login extends AppCompatActivity {
 
         }
 
+<<<<<<< HEAD
        // @Override
        // protected void onProgressUpdate(Integer... values) {
             //super.onProgressUpdate(values);
@@ -129,6 +142,15 @@ public class login extends AppCompatActivity {
             //progressBar.setProgress(values[0]);
             // setProgressPercent(values);
        // }
+=======
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+            progressBar.setVisibility(View.VISIBLE);
+            progressBar.setProgress(values[0]);
+            // setProgressPercent(values);
+        }
+>>>>>>> 6f4c351d9c6336cc2fe812646866e376e691d4e9
 
         @Override
         protected void onPostExecute(String result) {
@@ -137,7 +159,11 @@ public class login extends AppCompatActivity {
 
             if(i==1)
             {
+<<<<<<< HEAD
                 Intent intent = new Intent(login.this,MainActivity.class);
+=======
+                Intent intent = new Intent(MainActivity.this,okay.class);
+>>>>>>> 6f4c351d9c6336cc2fe812646866e376e691d4e9
                 startActivity(intent);}
         }
     }
